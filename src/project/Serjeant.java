@@ -1,6 +1,6 @@
 package project;
 
-public class Serjeant extends Soldier {
+public class Serjeant extends Soldier  implements Shoot{
     private String detachment;
     private char logo;
     public Serjeant(String firstName) {
@@ -28,5 +28,10 @@ public class Serjeant extends Soldier {
         super.printInfo();
         System.out.println("Detachment: " + detachment);
         System.out.println("Logo: " + '^');
+    }
+
+    @Override
+    public void shoot() {
+        System.out.println("efficiency 50%");
     }
 }

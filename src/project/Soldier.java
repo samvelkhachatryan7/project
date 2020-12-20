@@ -1,6 +1,6 @@
 package project;
 
-public class Soldier extends Human {
+public class Soldier extends Human implements Shoot {
     private String subdivision;
     private int militaryBookletId;
     public Soldier(String firstName){
@@ -29,5 +29,10 @@ public class Soldier extends Human {
         System.out.println("Subdivision: " + subdivision );
         System.out.println("MilitaryBookletId: " + militaryBookletId);
 
+    }
+
+    @Override
+    public void shoot() {
+        System.out.println("efficiency 30%");
     }
 }

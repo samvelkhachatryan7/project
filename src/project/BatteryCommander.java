@@ -1,6 +1,6 @@
 package project;
 
-public class BatteryCommander extends Human {
+public class BatteryCommander extends Human implements Shoot {
     private int salary;
     private int experience;
 
@@ -31,5 +31,10 @@ public class BatteryCommander extends Human {
         System.out.println("Salary: " + salary);
         System.out.println("Experience: " + experience);
 
+    }
+
+    @Override
+    public void shoot() {
+        System.out.println("efficiency 90%");
     }
 }
